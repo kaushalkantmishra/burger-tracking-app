@@ -19,7 +19,7 @@ const Quote = () => {
     };
 
     fetchQuote();
-    const interval = setInterval(fetchQuote, 20000);
+    const interval = setInterval(fetchQuote, 5000);
 
     return () => clearInterval(interval);
   }, []);

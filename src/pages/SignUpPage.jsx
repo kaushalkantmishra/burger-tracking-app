@@ -88,7 +88,7 @@ const SignUpPage = () => {
         />
         <div className="mt-4 flex items-start">
           {" "}
-          <input type="checkbox" className="mt-2 mr-2" />{" "}
+          <input type="checkbox" className="mt-1 mr-2" />{" "}
           <p className="text-gray-700">
             I Agree with{" "}
             <a href="#" className="text-orange-500">
@@ -107,7 +107,7 @@ const SignUpPage = () => {
         >
           Sign Up
         </button>
-        <p className="mt-4 text-center">Or sign up with</p>
+        <p className="mt-4 text-center">----- Or sign up with -----</p>
         <button
           type="button"
           onClick={handleGoogleSignUp}
