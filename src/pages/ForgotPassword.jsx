@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { sendPasswordResetEmail, auth } from "../firebase"; // Import auth
+import { sendPasswordResetEmail, auth } from "../firebase";
 
 const ForgotPassword = () => {
   const emailRef = useRef();
