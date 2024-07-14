@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { sendPasswordResetEmail } from "../firebase";
+import { sendPasswordResetEmail, auth } from "../firebase"; // Import auth
 
 const ForgotPassword = () => {
   const emailRef = useRef();
@@ -14,9 +14,10 @@ const ForgotPassword = () => {
 
     try {
       setLoading(true);
-      await sendPasswordResetEmail(emailRef.current.value);
+      await sendPasswordResetEmail(auth, emailRef.current.value); // Pass auth and emailRef
       setMessage("Check your email for instructions to reset your password.");
     } catch (err) {
+      console.error("Error: ", err);
       setError("Failed to send reset email. Please check your email address.");
     }
 
