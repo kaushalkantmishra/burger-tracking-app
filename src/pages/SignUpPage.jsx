@@ -25,7 +25,7 @@ const SignUpPage = () => {
       usernameRef.current.value = "";
       passwordRef.current.value = "";
     } catch {
-      setError("Failed to create an account");
+      setError("Failed to create an account Password should atleast 6 digits");
     }
   };
 
