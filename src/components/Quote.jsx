@@ -7,7 +7,7 @@ const Quote = () => {
     const fetchQuote = async () => {
       try {
         const response = await fetch("https://api.api-ninjas.com/v1/quotes", {
-          headers: { "X-Api-Key": import.meta.env.VITE_API_NINJAS_KEY },
+          headers: { "X-Api-Key": "ANIeedv9wf9G2zRBS6gOfA==qen4WYgFHJweVsbM" },
         });
         const data = await response.json();
         if (data && data.length > 0) {
