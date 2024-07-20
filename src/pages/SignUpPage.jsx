@@ -103,7 +103,7 @@ const SignUpPage = () => {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="mt-4 w-full bg-orange-500 text-white p-2 rounded"
+          className="mt-4 w-full bg-orange-500 text-white p-2 rounded-3xl h-12"
         >
           Sign Up
         </button>
